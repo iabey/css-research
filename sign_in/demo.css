@@ -1,5 +1,43 @@
 body {
   font-family: Helvetica, sans-serif;
-  color: #333; }
+  color: #333;
+  font-size: 17px;
+  min-width: 768px; }
+
+body, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+ul, li, ol, a {
+  text-decoration: none; }
+
+body, html {
+  height: 100%;
+  background-color: #f1f1f1; }
+
+* {
+  box-sizing: border-box; }
+
+.container {
+  height: 100%;
+  text-align: center; }
+  .container:before {
+    content: '';
+    height: 85%;
+    display: inline-block;
+    vertical-align: middle; }
+  .container .logo {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    color: #EA6F5A; }
+
+.login_panel {
+  width: 400px;
+  background-color: #fff;
+  padding: 40px;
+  margin: 60px auto 0;
+  vertical-align: middle;
+  display: inline-block; }
 
 /*# sourceMappingURL=demo.css.map */
