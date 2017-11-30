@@ -1,0 +1,141 @@
+body>header{
+    position: absolute;
+    top:0;
+    width:100%;
+    overflow: hidden;
+    padding:0 20px 0;
+}
+body>header .brand{
+    float: left;
+    color: #313639;
+}
+body>header .brand a{
+    text-decoration: none;
+}
+.btn{
+    display: inline-block;
+    padding: 12px 20px;
+    border: 1px solid #D4D8DC;
+    text-decoration: none;
+    color: #9BA5A7;
+    text-align: center;
+}
+.form-container{
+    max-width: 960px;
+    margin:0 auto;
+    margin-top: 98px;
+}
+.form-container .form-behavior{
+    overflow: hidden;
+    margin-bottom: 75px;
+}
+.divider{
+    text-align: center;
+}
+.form-container .form-behavior:before, .form-container .form-behavior:after{
+    background-color: #BABFC3;
+}
+.divider:before, .divider:after{
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    height: 1px;
+    background-color: #BABFC3;
+    margin: 0 0% 0 -50%;
+}
+.divider:after{
+    margin: 0 -50% 0 0%;
+}
+
+.form-container .form-behavior span{
+    font-size: 24px;
+}
+.divider span{
+    display: inline-block;
+    vertical-align: middle;
+    padding:8px 40px;
+}
+  /*sign   form content*/
+.form-container .form-inner{
+    max-width: 360px;
+    margin:0 auto;
+}
+.form-container .form-group{
+    position: relative;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.form-container .form-group input[type='email'],
+.form-container .form-group input[type='text'],
+.form-container .form-group input[type='tel'],
+.form-container .form-group input[type='password'] {
+    padding: 16px 20px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #BABFC3;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.form-container .form-group.floated .float-label,
+.form-container .form-group input:focus~ .float-label{
+    left:-30px;
+}
+.form-container .form-group .float-label{
+    position: absolute;
+    z-index: 1;
+    left:4px;
+    font-size: 16px;
+    top: 17px;
+    -webkit-transition: all .25s;
+    transition: all .25s;
+}
+.form-container .form-group .float-label .icon-mail{
+    font-size: 22px;
+}
+.form-container .action{
+    margin-top: 38px;
+}
+.form-container .action button,
+.form-container .action .btn{
+    padding: 16px 20px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+}
+.btn-primary{
+    background-color: #E2644C;
+    border-color: transparent;
+    color: #fff;
+}
+
+.help-section{
+    margin-top: 30px;
+}
+
+.help-section .btn-alternative{
+    margin-bottom: 20px;
+    display: block;
+}
+.help-section .btn-alternative a{
+    border: 1px solid #E2644C;
+    color: #E2644C;
+    text-align: center;
+    padding: 16px 20px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 20px;
+}
+.help-section a{
+    display: block;
+    line-height: 22px;
+}

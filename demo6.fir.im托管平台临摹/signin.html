@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/signin.css">
+    <title>signin</title>
+</head>
+<body class="page-sessions-new">
+    <header>
+        <div class="brand">
+            <a href="//fir.im"><h1>fir.im</h1></a>
+        </div>
+    </header>
+    <div class="form-container">
+        <div class="form-behavior divider">
+            <span>登录</span>
+        </div>
+        <div class="form-inner">
+            <form class="form-float-label" id="new_user" action="/signin" accept-charset="UTF-8" method="post">
+                <input name="utf-8" type="hidden"  value="√">
+                <input type="hidden" name="authenticity_token" >
+                <input type="hidden" id="user" value>
+                <div class="form-group floated">
+                    <input class="form-control" autofocus="autofocus" placeholder="邮箱"  type="email"  name="user[email]"  id="user_email">
+                    <span class="float-label">
+                        <i class="icon-mail"></i>
+                    </span>
+                </div>
+                <div class="form-group floated">
+                    <input class="form-control" autocomplete="off" placeholder="密码" type="password" name="user[password]" id="user_password">
+                    <span class="float-label">
+                        <i class="icon-unlocked"></i>
+                    </span>
+                </div>
+                <div class="form-group checkbox-group hidden">
+                    <input type="hidden" name="user[remember_me]" type="hidden" value="0">
+                    <input type="checkbox" checked="checked" name="user[remember_me]" id="user_remember_me value="1">
+                    <label for="user_remember_me">两周内免登陆</label>
+                </div>
+                <div class="form-group action">
+                    <button class="btn btn-block btn-primary">登录</button>
+                </div>
+            </form>
+            <div class="help-section">
+                <span class="btn-alternative">
+                    <a href="">注册</a>
+                </span>
+                <a href="">忘记密码</a>
+                <a href="">重新发送激活邮件</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
