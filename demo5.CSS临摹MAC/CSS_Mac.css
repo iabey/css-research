@@ -1,0 +1,67 @@
+ul li{
+    list-style: none;
+}
+/*底座*/
+.board{
+    background: rgb(210,210,210);
+    width:600px;
+    height:450px;
+    margin:0 auto;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    border-radius:20px;
+    box-shadow: 0px 5px 6px rgb(160,160,160);
+    background: -webkit-linear-gradient(60deg,rgba(250,250,250,1)25%,rgba(210,210,210,1));
+    position: relative;
+}
+/*笔记本盖子*/
+.board:before{
+    content: '';
+    display: block;
+    width: 780px;
+    height:20px;
+    background: rgb(210,210,210);
+
+    position: absolute;
+    top:-20px;
+    left: -90px;
+    border-radius: 0 0 3px 3px;
+    border-top-left-radius: 390px 18px;
+    border-top-right-radius: 390px 18px;
+    border-bottom: 2px solid rgb(0,0,0);
+    /*渐变*/
+    background: -webkit-linear-gradient(top,rgb(210,210,210)50%,rgb(255,255,255));
+
+}
+/*旋转轴*/
+.blackbar{
+    width: 450px;
+    height:18px;
+    position: absolute;
+    left: calc((600px - 450px)/2);
+    border-bottom: 2px solid #fff;/*小白边*/
+    border-right: 2px solid #fff;/*小白边*/
+    border-radius: 2px;
+    /*线性渐变——中间浅浅白白的白色*/
+    background: -webkit-linear-gradient(top,rgb(30,30,30),rgb(60,60,60)35%,rgb(100,100,100)50%,rgb(30,30,30)65%);
+    background: linear-gradient(top,rgb(30,30,30),rgb(60,60,60)35%,rgb(100,100,100)50%,rgb(30,30,30)65%);
+}
+/*键盘*/
+.keyboard{
+    position: absolute;
+    width: 530px;
+    height: 216px;
+    left:35px;
+    top:35px;
+    border:1px solid rgb(180,180,180);
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    background: rgba(250,250,250,1);
+    box-shadow:2px 0px 2px rgb(180,180,180) inset,
+    0px 3px 3px rgb(180,180,180) inset,
+    -5px -0px 1px rgb(255,255,255) inset,
+    0px -3px 3px rgb(180,180,180) inset;
+}
+
+
