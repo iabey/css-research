@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0;
+    }
+		/* 自身浮动 —— 位置问题，main一定要放在最后，因为他还是个块*/
+		/* .box{
+			width: 100%;
+			height: 200px;
+		}
+		.main{
+			margin: 0 200px;height: 200px; background: blue;
+		}
+		.left{
+			width: 200px;height: 200px; background: red;float: left;
+		}
+		.right{
+			width: 200px;height: 200px; background: red;float: right;
+		} */
+
+		/* 绝对定位 */
+		.box{
+			width: 100%;
+			height: 200px;
+			position: relative;
+		}
+		.left{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			background-color: red;
+		}
+		.right{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			background-color: red;
+		}
+		.main{
+			height: 200px;
+			margin: 0 200px;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+  <div class="box">
+		<div class="left">123</div>
+		<div class="right">123</div>
+		<div class="main"></div>	
+	</div>
+</body>
+</html>

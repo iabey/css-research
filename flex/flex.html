@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./flex.css">
+    <style>
+        .flexBox{
+            height:800px;
+            width: 600px;
+            border:1px solid #1f6377;
+            display: flex;
+            display: -webkit-flex;
+            /*justify-content*/
+            justify-content: space-around;
+            /*flex-direction*/
+            flex-direction: row;/*主轴为水平方向 从左向右*/
+            /*flex-direction: row-reverse;*//*主轴为水平方向 从右向左*/
+            /*flex-direction: column;*//*主轴为垂直方向 从上向下*/
+            /*flex-direction: column-reverse;*//*主轴为垂直方向 从下向上*/
+            /*align-items*/
+            align-items: flex-end;/*垂直居中*/
+            /*align-items: flex-end;!* 与主轴的方向有关 ，定义在交叉轴上对齐方式  end 尾部*!*/
+            /*align-items:stretch;!*默认值，若项目未设置高度或设置为auto，将占满整个容器*!*/
+            /*flex-wrap*/
+            flex-wrap: wrap;/*换行*/
+            /*align-content*/
+            align-content: flex-end;/*多个主轴线的时候，在次周线上的对齐方式*/
+            align-content: space-around;
+
+        }
+        .flexItem{
+            width: 100px;
+            height:200px;
+            background-color: #0e90d2;
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            /*项目的属性*/
+            /*order:<integer>;*/
+            flex-grow:1;
+
+        }
+        /*odd 奇数  从1开始*/
+        .flexItem:nth-child(odd){
+            background-color: #3c3c3c;
+            height: 100px;
+            /*flex-grow:2;*/
+        }
+        .flexGrow{
+            flex-grow:2;
+        }
+    </style>
+</head>
+
+<body>
+<div class="main">
+    <div class="flexBox">
+        <div class="flexItem">1</div>
+        <div class="flexItem flexGrow">2</div>
+        <div class="flexItem">3</div>
+        <div class="flexItem">1</div>
+        <div class="flexItem">2</div>
+        <div class="flexItem">3</div>
+        <div class="flexItem">1</div>
+        <div class="flexItem">2</div>
+        <div class="flexItem">3</div>
+    </div>
+
+</div>
+</body>
+</html>
