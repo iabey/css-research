@@ -1,0 +1,139 @@
+body,p{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+.login_container{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  font-family: 'Microsoft YaHei';
+}
+.login_center{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 70%;
+  height: 80%;
+  margin: auto;
+
+}
+.login_header .login_icon_logo{
+  vertical-align: top;
+  margin-top: 10px;
+}
+.login_user_login{
+  height: 80%;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-position:top;
+  -webkit-background-size: cover;
+  background-image: url('http://172.16.10.172:6005/public/img/icon_bg.jpg');
+  position: relative;
+}
+.login_header_hs{
+  display: inline-block;
+}
+.login_header_hs {
+  font-family: STKaiti;
+  font-weight: bold;
+  margin-left: 15px;
+}
+.login_header_hs .login_header_caption{
+  font-size: 38px;
+  padding-bottom: 10px;
+}
+.login_header_hs .login_header_slogan{
+  font-size: 28px;
+  color: #0099ff;
+  padding-bottom: 15px;
+}
+.login_panel{
+  position: absolute;
+  width: 300px;
+  height:340px;
+  background-color:rgba(255, 255, 255, 0.8); 
+  top: calc(50% - 200px); 
+  right: 60px;
+  border-radius:4px;
+}
+.login_panel_header{
+  height: 50px;
+  line-height: 50px;
+  color: #0099ff;
+  opacity: 1;
+  background-color:#fff; 
+  border-top-right-radius:4px; 
+  border-top-left-radius:4px; 
+}
+.login_panel_header_name{
+  font-size: 16px;
+  display: inline-block;
+  padding-left: 20px;
+}
+.login_panel_header_icon{
+  float: right;
+  margin-top: 10px;
+  margin-right:14px; 
+}
+.login_panel_main{
+  padding: 25px 25px 0 20px;
+  
+}
+.login_panel_main .login_panel_item{
+    width: 100%;
+    margin-bottom: 25px;
+    position: relative;
+}
+.login_panel_item .login_panel_input{
+    padding: 7px 12px 7px 40px;
+    font-size: 15px;
+    border: 2px solid #fff;
+    border-radius:4px ;
+}
+.login_panel_checkNumber input{
+  padding: 5px 12px;
+  width: 50px;
+  font-size: 15px;
+  border: 2px solid #fff;
+  border-radius:4px ;
+}
+.login_panel_checkNumber .login_panel_checkNumber_code{
+  height: 30px;
+  width: 70px;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+  margin-left: 10px;
+}
+.login_panel_user_icon{
+  position: absolute;
+  top: 7px;
+  left:13px;
+}
+.login_panel_remeber .login_input_checkbox{
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  color: #0099ff;
+}
+.login_panel .login_button{
+  background-color:#0099ff;
+  width:100%;
+  height: 30px;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+}
+.login_footer{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: #CDCDCD;
+  width: 100%;
+}
